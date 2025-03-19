@@ -70,7 +70,6 @@ button:hover {
     background-color: rgb(81, 152, 81);
 }
 
-/* Features Section */
 .features {
     padding: 50px 20px;
     height: 120vh;
@@ -117,18 +116,31 @@ button:hover {
 }
 
 .feature-box img {
-    width: 50px;
+    width: 60px;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+h3 {
+    position: relative;
+    display: inline-block;
 }
 
 h3::after {
     content: "";
     display: block;
-    width: 50px;  /* Adjust width */
-    height: 3px;  /* Line thickness */
+    height: 6px;
     background-color: rgb(142, 180, 134);
-    margin: 5px auto 0; /* Adjust spacing */
-}
+    position: absolute;
+    bottom: -8px;
+    left: -2px;
+    right: 2px;
+    transform: rotate(-1deg) skew(-10deg);
+    transform-origin: left bottom;
+    border-radius: 2px;
+    opacity: 0.85;
 
+}
 
 footer {
     background: rgb(142, 180, 134);
